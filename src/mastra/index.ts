@@ -13,6 +13,13 @@ export const mastra = new Mastra({
     // stores telemetry, evals, ... into memory storage, if it needs to persist, change to file:../mastra.db
     url: ":memory:",
   }),
+   telemetry: {
+    serviceName: "braintrust",
+    enabled: true,
+    export: {
+      type: "otlp",
+    },
+  },
   logger: new PinoLogger({
     name: 'Mastra',
     level: 'info',
