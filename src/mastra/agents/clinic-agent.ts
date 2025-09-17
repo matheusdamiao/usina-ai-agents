@@ -39,8 +39,14 @@ export const clinicAgent = new Agent({
   model: openai('gpt-4o-mini'),
   tools:  await mcp.getTools() ,
   memory: new Memory({
+    options: {
+      workingMemory: {
+        enabled: true
+      }
+    },
     storage: new LibSQLStore({
       url: 'file:../mastra.db', // path is relative to the .mastra/output directory
-    }),
+    }
+  ),
   }),
 });
