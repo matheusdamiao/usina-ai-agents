@@ -112,11 +112,11 @@ export const realEstateAgent = new Agent({
   model: openai('gpt-4o-mini'),
   tools:  {},
   memory: new Memory({
-    options: {
-        workingMemory: {
-            enabled: true
-        }
-    },
+    // options: {
+    //     workingMemory: {
+    //         enabled: true
+    //     }
+    // },
     storage: new LibSQLStore({
       url: 'file:../mastra.db', // path is relative to the .mastra/output directory
     }),
