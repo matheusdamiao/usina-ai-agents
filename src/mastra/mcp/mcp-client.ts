@@ -6,7 +6,6 @@ export const mcp = new MCPClient({
     //   url: new URL("https://apollo-rf6v9rs8q-composio.vercel.app/v3/mcp/89cb5940-48e1-4173-acce-ddda488eebf5/mcp?include_composio_helper_actions=true"),
     // },
     googleCalendarMcp: {
-      timeout: 10000,
       "command": "npx",
       "args": [
         "-y",
