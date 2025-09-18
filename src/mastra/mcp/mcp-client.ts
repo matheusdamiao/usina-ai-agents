@@ -1,7 +1,7 @@
 import { MCPClient } from "@mastra/mcp";
  
 export const mcp = new MCPClient({
-  // timeout: 20000,
+  timeout: 200000,
   servers: {
     // googleCalendar: {
     //   url: new URL("https://apollo-rf6v9rs8q-composio.vercel.app/v3/mcp/89cb5940-48e1-4173-acce-ddda488eebf5/mcp?include_composio_helper_actions=true"),
